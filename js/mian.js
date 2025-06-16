@@ -5,6 +5,8 @@ let button = document.querySelector('button')
 
 
 let temp = document.querySelector('.temp')
+let main1 = document.querySelector('.main1')
+let main = document.querySelector('.main')
 
 
 let cardHED = document.querySelector('.cardHED')
@@ -18,8 +20,14 @@ let scalee = document.querySelector('.scalee')
 let handlebutton = () => {
 
     if (input.value == '') {
-        h2.innerHTML = "hoit betta"
+        h2.innerHTML = "Enter a city name"
     } else {
+
+
+        main1.style='display:block'
+        main.style='display:none'
+        
+     
 
         fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${input.value}&limit=2&appid=f921b0d5d82c2356163bcab823b1b23f`)
 
@@ -40,6 +48,10 @@ let handlebutton = () => {
             })
     }
 
+}
+
+let resett=()=>{
+   window.location.reload()
 }
 
 

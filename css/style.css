@@ -1,10 +1,18 @@
+/* ------------font links------- */
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+
+
 body{
-    background: black;
+background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 65%, rgba(255, 234, 41, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+
+    background-position: center;
+    background-size: cover;
 }
 
 .main {
@@ -33,6 +41,15 @@ input{
     margin-left: 20px;
 
 }
+.reset_btn {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-left: -330px;
+    margin-top: 480px;
+}
 
 
 
@@ -51,6 +68,7 @@ input{
   border-radius: 23px;
   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
   cursor: pointer;
+
 }
 
 .card:hover {
@@ -224,9 +242,9 @@ input{
 
 /* --------------card end */
 
-/* .main1{
+.main1{
     display: none;
-} */
+}
 
 h2{
     color: #FFFFFF;
@@ -237,16 +255,18 @@ h2{
 }
 
 
-.appname{
-    font-size: 50px;
-     color: #FFFFFF;
+.appname {
+    font-size: 29px;
+    color: #FFFFFF;
+    font-family: "Adamina", serif;
+    margin-bottom: 70px;
 }
-
 .app {
-    color: #000;
-    font-size: 30px;
+    color: #000000b5;
+    font-size: 27px;
     width: 196px;
     margin-bottom: 0px;
+    font-family: "Adamina", serif;
 }
 
 .chngCalcious{

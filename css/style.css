@@ -171,15 +171,14 @@ body{
 }
 
 .temp {
-  position: absolute;
-  left: 25px;
-  bottom: 12px;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 77px;
-  color: rgba(87, 77, 51, 1);
+    position: absolute;
+    left: 70px;
+    bottom: 12px;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 77px;
+    color: rgba(87, 77, 51, 1);
 }
-
 .temp-scale {
   width: 80px;
   height: 36px;
@@ -215,4 +214,17 @@ h2{
 .resulttt{
     color: #FFFFFF;
 
+}
+
+
+.appname{
+    font-size: 50px;
+     color: #FFFFFF;
+}
+
+.app {
+    color: #000;
+    font-size: 30px;
+    width: 190px;
+    margin-bottom: 0px;
 }

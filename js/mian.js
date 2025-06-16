@@ -70,3 +70,25 @@ cardHED.innerHTML=input.value
 
 
 }
+
+function updateClock() {
+  let now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
+
+  // যদি ঘন্টা, মিনিট বা সেকেন্ড এক সংখ্যার হয় (০-৯), তাহলে তার আগে '0' বসাই
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
+  let timeString = hours + ":" + minutes + ":" + seconds;
+
+  document.getElementById("clock").innerHTML = timeString;
+}
+
+// প্রতি ১ সেকেন্ড (1000 milliseconds) পরপর updateClock() চালাও
+setInterval(updateClock, 1000);
+
+// প্রথমবার চালাও যাতে দেরি না হয়
+updateClock();

@@ -4,11 +4,11 @@ let button = document.querySelector('button')
 
 
 
-let temp = document.querySelector('temp')
+let temp = document.querySelector('.temp')
 
 
-let cardheader = document.querySelector('card-header')
-let resulttt = document.querySelector('resulttt')
+let cardHED = document.querySelector('.cardHED')
+let resulttt = document.querySelector('.resulttt')
 // let h2 = document.querySelector('h2')
 
 
@@ -30,10 +30,26 @@ let handlebutton = () => {
                
 
 
-              fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=f921b0d5d82c2356163bcab823b1b23f`)
+       let myarrray=       fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=f921b0d5d82c2356163bcab823b1b23f`)
 
 .then( res => res.json())
 .then((data)=>{
+
+
+
+
+
+
+
+let xxx=Math.floor(data.main.temp - 273)
+temp.innerHTML=xxx +"°C";
+
+
+cardHED.innerHTML=input.value
+
+
+
+
      console.log(data.main.temp - 273.15 )
 })
 
